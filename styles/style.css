@@ -97,6 +97,43 @@ body {
     align-items: start;
 }
 
+.about {
+    position: relative;
+    width: 100%;
+    height: -webkit-fill-available;
+    grid-area: content;
+    display: grid;
+    padding: 10px 0px 10px;
+    grid-gap: 10px;
+    background: #f1f0ec;
+    grid-template-columns: repeat(auto-fit, 259px);
+    grid-template-rows:
+        min-content min-content;
+    justify-items: center;
+    justify-content: center;
+    align-items: start;
+}
+
+.aboutText {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: #122853;
+    font-size: 16px;
+    text-align: center;
+    font-family: math;
+}
+.aboutHeaderText {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-weight: bold;
+    color: #122853;
+    font-size: 20px;
+    text-align: center;
+    font-family: math;
+}
+
 .itemBlock {
     position: relative;
     display: flex;

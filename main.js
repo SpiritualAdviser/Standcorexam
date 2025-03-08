@@ -9,6 +9,13 @@ const buttonHandler = (buttonName) => {
         case 'refineCalc':
             window.open('./games/refineCalc/index.html', '_self')
             break;
+        case 'aboutCaves':
+            window.open('./games/cavesAndCrystals/index.html', '_self')
+            break;
+
+        case 'backToMain':
+            window.open('../../index.html', '_self')
+            break;
 
         default:
             break;
