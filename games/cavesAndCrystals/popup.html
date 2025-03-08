@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+
+    <meta charset="utf-8" />
+    <title>My projects</title>
+    <link id="stylesheet" rel="stylesheet" href="../../styles/style.css">
+    <script src="../../main.js"></script>
+</head>
+
+<body>
+    <main class=mainBlock>
+
+        <header class="headerMyName">
+            <text class="myNameText">Роман <br>SpiritualAdviser </text>
+        </header>
+
+        <header class="descriptionAbout">
+            <text class="descriptionText"> Уведомления.
+                <br> После завершения уровня, вы увидите уведомление с результатом его прохождения.
+            </text>
+        </header>
+
+        <aside class="asideMyWorks">
+            <!-- <text class="myWorksText">MY WORKS</text> -->
+            <button name="goToSurvival" class="itemButton" translate="no">ВЫЖИВАНИЕ</button>
+            <button name="goToCavesAdventure" class="itemButton" translate="no">ИГРОКИ</button>
+
+        </aside>
+
+        <content class="about">
+            <article class="aboutHeaderBlock">
+                <text class="aboutHeaderText">Уведомления</text>
+            </article>
+        
+            <article class="aboutBlock">
+                <img class="logoGame" src="../../assets/images/cavesAndCrystals/winPopup.gif">
+                <br>
+                <text class="aboutText">
+                    <br> По окончанию уровня показывем уведомления о выигрыше или проигрыше.
+                    <br> Для анимации уведомлений использовал библиотеку libs.coil.gif и GifImage Compose.
+                    <br> Так же после сброса линии показываем анимацию обычного и мегасброса если игрок сбросил больше кристалов чем указана в уровне.
+                    <br> Это реализовано с помощью graphicsLayer и scale анимации.
+                </text>
+            </article>
+
+        </content>
+        <info class="infoBlock">
+            <text class="infoText">contact pomaxam@narod.ru </text>
+        </info>
+
+
+    </main>
+
+</body>
+
+</html>

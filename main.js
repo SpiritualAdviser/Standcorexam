@@ -17,6 +17,21 @@ const buttonHandler = (buttonName) => {
             window.open('../../index.html', '_self')
             break;
 
+        case 'goToToMain':
+            window.open('index.html', '_self')
+            break;
+
+        case 'goToCavesAdventure':
+            window.open('adventure.html', '_self')
+            break;
+        case 'goToSurvival':
+            window.open('survival.html', '_self')
+            break;
+
+            case 'goToPopup':
+                window.open('popup.html', '_self')
+                break;
+
         default:
             break;
     }

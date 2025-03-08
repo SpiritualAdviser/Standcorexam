@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+
+    <meta charset="utf-8" />
+    <title>My projects</title>
+    <link id="stylesheet" rel="stylesheet" href="../../styles/style.css">
+    <script src="../../main.js"></script>
+</head>
+
+<body>
+    <main class=mainBlock>
+
+        <header class="headerMyName">
+            <text class="myNameText">Роман <br>SpiritualAdviser </text>
+        </header>
+
+        <header class="descriptionAbout">
+
+            <text class="descriptionText"> Приключения - вам нужно будет открыть 200 свитков, 
+                каждый из которых представляет собой уровень, 
+                на котором вам нужно выполнить задания. 
+                Собирая комбинации из цветных кристаллов, вы набираете очки. 
+                При наборе необходимого количества очков уровень считается успешно пройденным. 
+                Для этого у вас есть ограниченное количество ходов, а на игровых площадках есть препятствия, которые необходимо преодолеть
+                <br>Целью этого проекта было написать простую логическую игру без рекламы,
+                <br> ориентированную на среднестатистического игрока.
+            </text>
+        </header>
+
+        <aside class="asideMyWorks">
+            <!-- <text class="myWorksText">MY WORKS</text> -->
+            <button name="goToToMain" class="itemButton" translate="no">МЕНЮ</button>
+            <button name="goToSurvival" class="itemButton" translate="no">ВЫЖИВАНИЕ</button>
+
+        </aside>
+
+        <content class="about">
+            <article class="aboutHeaderBlock">
+                <text class="aboutHeaderText">Приключения.</text>
+            </article>
+
+            <article class="aboutBlock">
+                <img class="logoGame" src="../../assets/images/cavesAndCrystals/mapGf.gif">
+                <br>
+                <text class="aboutText">Карта состоит из 200 свитков-уровней, реализована компонентом LazyVerticalGrid. 
+                    <br> Нажимая на свиток Вы запускаете основное поле игры. 
+                </text>
+            </article>
+
+            <article class="aboutHeaderBlock">
+                <text class="aboutHeaderText">Поле игры.</text>
+            </article>
+
+            <article class="aboutBlock">
+                <img class="logoGame" src="../../assets/images/cavesAndCrystals/mainField.png">
+                <br>
+                <text class="aboutText">
+                    <br> Размер игрового поля меняется от сложности уровня.
+                    <br>Слева вверху находится блок с иноформацией о игроке,
+                    <br>каждый игрок имеет свой уникальный прогресс. 
+                    <br> На поле расставлены препятствия в виде камней и травы, 
+                    <br>сбрасывая линии выигрыша, вы  повреждаете препятствия. 
+                    <br> Камень уничтожается за два раза, трава при первом сбросе. 
+                    <br> Анимция повреждения и уничтожения сделана спрайтами - sprite. 
+                    <br>Появление кристалов реализована Compose animation
+                    <br> Так же предусмотрены бонусы для помощи в игре. 
+                    <br> Они открываются по мере набора очков. 
+                    <br> перемещение сделано встороенным функционалом pointerInput
+                    <br> Для взаимодействия объектов написана своя логика колизий.
+                    <br> Она следит за столкновением объектов, вычисляет доступные ячейки - места для кристалов и бонусов.
+                    <br> Для оптимизации Использую Kotlin Coroutine и просчитываю координаты только в момент движения объекта. 
+                    <br> Обновлениt Ui с помощью compose state. 
+                    <br> Настройка уроней проискодит файлом конфигурации, доступным для гейм дизайнера.
+                    <br> Однако написан свой генератор уровней, 
+                    <br>введя желаемое количество уровней, логика сконфигурирует постепенное усложнение уровней.
+                    <br>Гейм дизайнер может в ручную настроить как отдельные так и все уровни (поправить, улучшить  условия).
+                </text>
+            </article>
+            <article class="aboutBlock">
+                <img class="logoGame" src="../../assets/images/cavesAndCrystals/mainFieldLa.png">
+                <br>
+                <text class="aboutText"> Пример книжного режима экрана.
+                    <br> Для этого использую отдельную верстку расположения компонентов.
+                </text>
+            </article>
+
+        </content>
+        <info class="infoBlock">
+            <text class="infoText">contact pomaxam@narod.ru </text>
+        </info>
+
+
+    </main>
+
+</body>
+
+</html>
