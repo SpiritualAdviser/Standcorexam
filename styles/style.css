@@ -135,7 +135,7 @@ body {
 .itemButton {
     position: relative;
     width: 100px;
-    height: 33px;
+    height: 25px;
     background-color: #3f589f;
     font-weight: bold;
     color: #efe1bb;
@@ -194,4 +194,12 @@ audio {
     position: relative;
     border-radius: 15px;
     padding: 6px;
+}
+
+.cavesCollages {
+    position: relative;
+    border-radius: 15px;
+    padding: 6px;
+    /* width: 250px; 
+    height: 150px; */
 }
