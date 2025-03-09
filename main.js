@@ -28,9 +28,17 @@ const buttonHandler = (buttonName) => {
             window.open('survival.html', '_self')
             break;
 
-            case 'goToPopup':
-                window.open('popup.html', '_self')
-                break;
+        case 'goToPopup':
+            window.open('popup.html', '_self')
+            break;
+
+        case 'goToPlayers':
+            window.open('players.html', '_self')
+            break;
+
+        case 'goToInfo':
+            window.open('info.html', '_self')
+            break;
 
         default:
             break;

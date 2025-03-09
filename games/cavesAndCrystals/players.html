@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+
+    <meta charset="utf-8" />
+    <title>My projects</title>
+    <link id="stylesheet" rel="stylesheet" href="../../styles/style.css">
+    <script src="../../main.js"></script>
+</head>
+
+<body>
+    <main class=mainBlock>
+
+        <header class="headerMyName">
+            <text class="myNameText">Роман <br>SpiritualAdviser </text>
+        </header>
+
+        <header class="descriptionAbout">
+
+            <text class="descriptionText"> Игроки,
+                <br> Ваши достижения сохраняются в карточке игрока.
+                <br> Вы можете создать столько игроков, сколько вам нужно, но у каждого игрока свой игровой прогресс.
+            </text>
+        </header>
+
+        <aside class="asideMyWorks">
+            <!-- <text class="myWorksText">MY WORKS</text> -->
+            <button name="goToPopup" class="itemButton" translate="no">УВЕДОМЛЕНИЯ</button>
+            <button name="goToInfo" class="itemButton" translate="no">ИНФОРМАЦИЯ</button>
+
+        </aside>
+
+        <content class="about">
+            <article class="aboutHeaderBlock">
+                <text class="aboutHeaderText">Игроки.</text>
+            </article>
+
+            <article class="aboutBlock">
+                <img class="logoGame" src="../../assets/images/cavesAndCrystals/playersGf.gif">
+                <br>
+                <text class="aboutText">При создании игрока есть проверка на пустое имя,
+                    <br>в этом случае показывваем подсказку о необходимости указать имя игрока.
+                    <br>Если пользователь не создал игрока при первом запуске, то он созается автоматически.
+                    <br>Список игроков храним в база данных Json файлом.
+                    <br>База данных основана на Room, библиотеку libs.gson использую что бы парсить json.
+                    <br>Игрок хранит данные о достижениях, пройденых - открытых уровнях и уникальные настройки урвней
+                    приключений.
+                </text>
+            </article>
+
+            <article class="aboutBlock">
+                <img class="logoGame" src="../../assets/images/cavesAndCrystals/achive.png">
+                <br>
+                <text class="aboutText">Таблица достижений,
+                    <br>В таблице рекордов игроки занимают места, чем больше очков достижений, тем выше место в таблице.
+                    <br>Список мест удаленно храним на сервере.
+                    <br>База данных сервера отдает Json файл, который мы развораиваем и отображаем в игре.
+                    <br>Для общения с сервером использую Retrofit, libs.gson и APIService для SQLite запросов.
+                    <br>Если нет доступа к интернету, просто не показываем таблицу так как это не обязательная часть
+                    игры.
+                    <br>При следующем подключении ирок обновить свой прогресс и не потеряет полученые очки в момент
+                    отсутствия интернета.
+                </text>
+            </article>
+
+        </content>
+        <info class="infoBlock">
+            <text class="infoText">contact pomaxam@narod.ru </text>
+        </info>
+
+
+    </main>
+
+</body>
+
+</html>

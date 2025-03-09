@@ -19,30 +19,32 @@
         </header>
 
         <header class="descriptionAbout">
-            <text class="descriptionText"> Уведомления.
-                <br> После завершения уровня, вы увидите уведомление с результатом его прохождения.
+
+            <text class="descriptionText"> Информация.
+                <br> Экран с работами автора и инструкцией к играм.
+                <br> Вы можете посмотреть и запустить некоторые игры в вашем браузере,
+                <br> посмотреть описание если ига требует установку на устройство.
             </text>
         </header>
 
         <aside class="asideMyWorks">
             <!-- <text class="myWorksText">MY WORKS</text> -->
-            <button name="goToSurvival" class="itemButton" translate="no">ВЫЖИВАНИЕ</button>
             <button name="goToPlayers" class="itemButton" translate="no">ИГРОКИ</button>
+            <button name="backToMain" class="itemButton" translate="no">ПРОЕКТЫ</button>
 
         </aside>
 
         <content class="about">
             <article class="aboutHeaderBlock">
-                <text class="aboutHeaderText">Уведомления</text>
+                <text class="aboutHeaderText">Спасибо за внимание!</text>
             </article>
-        
+
             <article class="aboutBlock">
-                <img class="logoGame" src="../../assets/images/cavesAndCrystals/winPopup.gif">
-                <br>
+                <img class="logoGame" src="../../assets/images/cavesAndCrystals/mainMeny.png">
                 <text class="aboutText">
-                    <br> По окончанию уровня показывем уведомления о выигрыше или проигрыше.
-                    <br> Для анимации уведомлений использовал библиотеку libs.coil.gif и GifImage Compose.
+                    <br>Экран информации сделан с использованием WebView в связке с WebChromeClient
                 </text>
+
             </article>
 
         </content>
